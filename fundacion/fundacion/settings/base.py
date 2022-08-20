@@ -16,14 +16,14 @@ import sys
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 #BASE_DIR = Path(__file__).resolve().parent.parent
-BASE_DIR= os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = ''#django-insecure-vlxw!xrm2c2(n+rpg&y))bo7718c5cv+b=n^tr#qur%v7d^ix#
+SECRET_KEY = 'django-insecure-vlxw!xrm2c2(n+rpg&y))bo7718c5cv+b=n^tr#qur%v7d^ix'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'apps.noticias_app',
+    'apps.noticias_app'
 ]
 
 MIDDLEWARE = [
@@ -50,7 +50,7 @@ MIDDLEWARE = [
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
-    'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'django.middleware.clickjacking.XFrameOptionsMiddleware'
 ]
 
 ROOT_URLCONF = 'fundacion.urls'
@@ -58,7 +58,7 @@ ROOT_URLCONF = 'fundacion.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(os.path.dirname(BASE_DIR), "templates")],
+        'DIRS': [os.path.join(os.path.dirname(BASE_DIR), 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
